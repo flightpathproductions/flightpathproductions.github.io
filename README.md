@@ -25,4 +25,4 @@ To build the project for production you simply need to make sure you've installe
 npm run build
 ```
 
-This will create the build folder. 
+This will create the `dist` folder. 

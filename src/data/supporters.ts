@@ -75,7 +75,7 @@ export const supporterData: SupporterData[] = [
   {
     name: 'Amanda Glover',
     role: 'Pilot',
-    image: '/img/@barbiejetpilot2.JPG',
+    image: '/img/@barbiejetpilot2.jpg',
     quote: 'I hope this documentary influences the next generation of young women in a way that cements their confidence, seals their courage, and gives to them the assurance they need to become a pilot.',
   },
 ];

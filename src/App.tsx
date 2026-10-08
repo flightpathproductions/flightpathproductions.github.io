@@ -6,7 +6,6 @@ import Contact from './pages/contact/contact';
 import Crew from './pages/crew/crew';
 import Press from './pages/press/press';
 
-// @ts-ignore CSS is handled by the bundler and has no TypeScript declarations.
 import './App.css';
 
 
