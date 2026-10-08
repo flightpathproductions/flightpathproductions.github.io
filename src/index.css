@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'GlacialIndifference';
+  src: url('./fonts/glacialindifference-regular-webfont.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GlacialIndifference';
+  src: url('./fonts/glacialindifference-bold-webfont.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GlacialIndifference';
+  src: url('./fonts/glacialindifference-italic-webfont.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeronaves';
+  src: url('./fonts/aeronavespersonaluseonly-0wwnz-webfont.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  @apply bg-brand-navy font-sans text-white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: .0625em;
+}
+
+code {
+  @apply font-mono;
+}
+
+.supporter-card__name {
+  font-family: 'Aeronaves', sans-serif;
+  font-size: 2rem;
+}
+
+.numbers {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.aeronaves {
+  font-family: 'Aeronaves', sans-serif;
+}
+
+
+.teamCarouselDescription__quote::before {
+  content: "\"";
+  display: inline-block;
+  font-size: 28px;
+  line-height: 24px;
+}
+
+
+.teamCarouselDescription__quote::after {
+  content: "\"";
+  display: inline-block;
+  font-size: 28px;
+  line-height: 24px;
+}
+
+.container-masthead {
+  display: flow-root;
+  font-family: 'GlacialIndifference', Arial, sans-serif;
+}
+
+.masthead-poster {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  margin: 0 auto 1.25rem;
+}
+
+@media (min-width: 993px) {
+  .masthead-poster {
+    float: right;
+    width: 40%;
+    margin: 0 0 1.25rem 1rem;
+  }
+}
