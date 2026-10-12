@@ -5,10 +5,9 @@ import { contactData } from "../../data/heroes";
 
 export default function Contact() {
   return (
-    <div>
-
-      <section className="mx-auto max-w-7xl px-3 sm:px-8 lg:px-9 py-10 flex flex-col gap-6 flight-videos">
-        <div className="container mt-5" id="contact">
+    <div className="flex flex-col gap-8">
+      <div className="mx-auto max-w-7xl w-auto flex flex-col gap-6">
+        <div className="mt-5" id="contact">
           <div className="row">
             <div className="col-12 text-center flex flex-col gap-4">
               <h2 className="aeronaves text-3xl font-bold">Contact</h2>
@@ -19,19 +18,17 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
       
       <Presslink />
 
       <Donate />
 
-      <section className="mx-auto max-w-7xl px-3 sm:px-8 lg:px-9 py-10 flex flex-col gap-6 flight-videos">
-        <div className="grid auto-rows-fr grid-cols-3 gap-5 sm:grid-cols-[repeat(3,minmax(0,360px))] md:grid-cols-[repeat(3,minmax(0,420px))] lg:grid-cols-[repeat(3,minmax(0,480px))] xl:grid-cols-[repeat(3,minmax(0,380px))] sm:justify-center">
-          {contactData.map((hero) => (
-              <HeroCard key={hero.tag} hero={hero} />
-          ))}
-        </div>
-      </section>
+      <div className="grid auto-rows-fr grid-cols-1 gap-5 sm:grid-cols-[repeat(2,minmax(0,360px))] md:grid-cols-[repeat(3,minmax(0,420px))] lg:grid-cols-[repeat(3,minmax(0,480px))] xl:grid-cols-[repeat(3,minmax(0,380px))] sm:justify-center">
+        {contactData.map((hero) => (
+            <HeroCard key={hero.tag} hero={hero} />
+        ))}
+      </div>
     </div>
   );
 }

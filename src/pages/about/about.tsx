@@ -5,10 +5,10 @@ import { supporterData } from '../../data/supporters';
 
 export default function About() {
     return (
-        <div className="space-y-12 pb-10 sm:space-y-16">
+        <div className="space-y-12 sm:space-y-16">
             <section className="container-masthead mx-auto w-full text-white">
                 <img
-                    className="masthead-poster"
+                    className="masthead-poster ml-3"
                     src="/img/poster.png"
                     width={480}
                     alt="Women at 36,000 feet film poster"
@@ -16,7 +16,7 @@ export default function About() {
                 <h1 className="aeronaves text-center text-masthead-title font-medium tracking-normal md:text-masthead-title-md masthead-xl:text-masthead-title-xl">
                     Women at <span className="numbers font-bold italic">36,000</span> feet
                 </h1>
-                <h2 className="mb-5 text-center text-masthead-subtitle font-medium tracking-normal">
+                <h2 className="aeronaves mb-5 text-center text-masthead-subtitle font-medium tracking-normal">
                     A feature documentary on women in aviation.
                 </h2>
                 <p className="mb-4 text-masthead-copy">
@@ -36,19 +36,19 @@ export default function About() {
             <Donate />
 
             <section aria-labelledby="support-title" className="text-white">
-                <h2 id="support-title" className="mx-auto mb-6 max-w-3xl text-center text-2xl font-semibold sm:text-3xl">
+                <h2 id="support-title" className="aeronaves mx-auto mb-6 text-center text-[1.75rem] sm:text-3xl">
                     These are just some of our international supporters from across the aviation industry!
                 </h2>
                 <div className="grid auto-rows-fr grid-cols-1 gap-5 sm:grid-cols-[repeat(2,minmax(0,360px))] md:grid-cols-[repeat(2,minmax(0,420px))] lg:grid-cols-[repeat(2,minmax(0,480px))] xl:grid-cols-[repeat(2,minmax(0,540px))] sm:justify-center">
                     {supporterData.map((supporter) => (
-                        <SupporterCard key={supporter.name} supporter={supporter} />
+                        <SupporterCard key={supporter.name} supporter={supporter} imageShape="square" />
                     ))}
                 </div>
             </section>
 
             <section className="text-center text-white">
-                <h2 className="mb-5 text-2xl font-semibold sm:text-3xl">
-                    If you are a female pilot with a story to tell, please get in touch!
+                <h2 className="aeronaves mb-5 text-2xl font-semibold sm:text-3xl">
+                    If you are a female pilot with a story to tell, <br/>please get in touch!
                 </h2>
                 <Link
                     className="inline-flex rounded bg-primary px-6 py-3 font-semibold text-white hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-navy"

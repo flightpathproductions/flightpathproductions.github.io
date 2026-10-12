@@ -2,13 +2,16 @@ import type { SupporterData } from '../data/supporters';
 
 type SupporterCardProps = {
   supporter: SupporterData;
+  imageShape: 'square' | 'natural';
 };
 
-export default function SupporterCard({ supporter }: SupporterCardProps) {
+export default function SupporterCard({ supporter, imageShape }: SupporterCardProps) {
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-md bg-white text-slate-900 shadow-lg">
       <img
-        className="aspect-square h-auto w-full shrink-0 object-cover object-top"
+        className={imageShape === 'square'
+          ? 'aspect-square h-auto w-full shrink-0 object-cover object-top'
+          : 'h-auto w-full shrink-0'}
         src={supporter.image}
         alt={supporter.name}
         loading="lazy"

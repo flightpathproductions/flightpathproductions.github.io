@@ -6,7 +6,7 @@ const socialLinks = [
 
 export default function Donate() {
   return (
-    <section className="rounded-md p-6 text-center bg-white/10 text-white shadow-lg sm:p-8">
+    <div className="rounded-md p-6 text-center bg-white/10 text-white shadow-lg sm:p-8">
       <form action="https://www.paypal.com/donate" method="post" target="_blank" className="mb-5">
         <input type="hidden" name="hosted_button_id" value="UJE6H3L8P5RBE" />
         <button className="rounded bg-blue-700 px-6 py-3 font-semibold text-white hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:ring-offset-2" type="submit">
@@ -23,6 +23,6 @@ export default function Donate() {
           </a>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

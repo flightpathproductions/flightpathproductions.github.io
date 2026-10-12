@@ -3,7 +3,7 @@ import { crewData } from "../../data/crew";
 
 export default function Crew() {
   return (
-    <div className="mx-auto max-w-7xl px-3 sm:px-8 lg:px-9 py-10 flex flex-col gap-6">
+    <div className="mx-auto max-w-8xl flex flex-col sm:flex-wrap gap-6">
 
             <div className="text-center">
               <h1 className="aeronaves text-4xl font-bold">About Flight Path Productions</h1>
@@ -11,15 +11,14 @@ export default function Crew() {
             </div>
 
 
-        <section className="mx-auto max-w-7xl px-3 sm:px-8 lg:px-9 py-10 flex flex-col gap-6 flight-videos">
+        <section className="mx-auto px-0 flex flex-col gap-6 flight-videos">
           <p className="text-center">Meet some of the team…</p>
-          <div className="grid auto-rows-fr grid-cols-3 gap-5 sm:grid-cols-[repeat(2,minmax(0,360px))] md:grid-cols-[repeat(2,minmax(0,420px))] lg:grid-cols-[repeat(2,minmax(0,480px))] xl:grid-cols-[repeat(2,minmax(0,380px))] sm:justify-center">
+          <div className="grid auto-rows-fr grid-cols-1 gap-5 sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-[repeat(2,minmax(0,480px))] xl:grid-cols-[repeat(2,minmax(0,540px))] sm:justify-center">
             {crewData.map((supporter) => (
-                <SupporterCard key={supporter.name} supporter={supporter} />
+                <SupporterCard key={supporter.name} supporter={supporter} imageShape="natural" />
             ))}
           </div>
         </section>
-        
     </div>
 );
 }
